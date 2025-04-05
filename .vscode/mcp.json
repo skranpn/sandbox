@@ -1,0 +1,22 @@
+{
+    "servers": {
+        "uuid-generator": {
+            "type": "stdio",
+            "command": "${workspaceFolder}/target/debug/mcp-poem-stdio",
+            "args": []
+        },
+        "uuid-generator-sse": {
+            "type": "sse",
+            "url": "http://127.0.0.1:8000/sse"
+        },
+        "uuid-generator-sdk-stdio": {
+            "type": "stdio",
+            "command": "${workspaceFolder}/target/debug/mcp-sdk-stdio",
+            "args": []
+        },
+        "uuid-generator-sdk-sse": {
+            "type": "sse",
+            "url": "http://127.0.0.1:8000/sse"
+        }
+    }
+}
