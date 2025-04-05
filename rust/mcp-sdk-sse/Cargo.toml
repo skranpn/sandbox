@@ -1,0 +1,14 @@
+[package]
+name = "mcp-sdk-sse"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+anyhow = "1.0.97"
+rmcp = { version = "0.1.5", features = ["transport-sse-server"] }
+schemars = "0.8.22"
+serde = { version = "1.0.219", features = ["derive"] }
+tokio = { version = "1.44.1", features = ["macros", "rt-multi-thread", "signal"] }
+tracing = "0.1.41"
+tracing-subscriber = { version = "0.3.19", features = ["std", "fmt", "env-filter"] }
+uuid = { version = "1.16.0", features = ["v4", "v7"] }
